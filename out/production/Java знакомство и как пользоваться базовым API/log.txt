@@ -1,4 +1,5 @@
-нояб. 27, 2023 3:13:56 PM Lesson_02.Ex005_Logger main
+нояб. 27, 2023 3:13:56 PM scr.Lesson_02.Ex005_Logger main
 WARNING: Тестовое логирование 1
-нояб. 27, 2023 3:13:56 PM Lesson_02.Ex005_Logger main
+нояб. 27, 2023 3:13:56 PM scr.Lesson_02.Ex005_Logger main
 INFO: Тестовое логирование 2
+

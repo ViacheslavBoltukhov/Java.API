@@ -39,6 +39,9 @@ public class NoteBook {
     public void setColour(String colour) {
         this.colour = colour;
     }
+    public String toString() {
+        return "RAM: " + RAM + ", HDD: " + HDD + ", OS: " + OS + ", colour: " + colour;
+    }
 
     @Override
     public boolean equals(Object obj) {
