@@ -157,7 +157,7 @@ public class Main {
             NoteBook newNoteBook = new NoteBook();
             Random random = new Random();
             newNoteBook.setRAM(random.nextInt(1, 33));
-            newNoteBook.setHDD(random.nextInt(1, 9));
+            newNoteBook.setHDD(random.nextInt(1, 17));
             newNoteBook.setOS(typeOS.get(random.nextInt(1, 5)));
             newNoteBook.setColour(colourBook.get(random.nextInt(1, 6)));
             noteBooks.add(newNoteBook);
