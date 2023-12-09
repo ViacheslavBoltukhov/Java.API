@@ -18,60 +18,57 @@ public class Main {
             Set<NoteBook> filterBook = new HashSet<>();
             switch (pr) {
                 case "1":
-                    System.out.println("Фильтр по ОЗУ");
                     System.out.println("Введите минимальное значение желаемой памяти ОЗУ в Гигобайтах");
                     int minRam = scanner.nextInt();
                     System.out.println("Введите максимальное значение желаемой памяти ОЗУ Гигобайтах");
                     int maxRam = scanner.nextInt();
-                    for (NoteBook noteBook: noteBooks){
-                        if (noteBook.getRAM() >= minRam && noteBook.getRAM() <= maxRam){
+                    for (NoteBook noteBook : noteBooks) {
+                        if (noteBook.getRAM() >= minRam && noteBook.getRAM() <= maxRam) {
                             filterBook.add(noteBook);
                         }
                     }
                     noteBooks = Set.copyOf(filterBook);
                     break;
                 case "2":
-                    System.out.println("Фильтр по ЖД");
                     System.out.println("Введите минимальное значение желаемой памяти ЖД в Теробайтах");
                     int minHdd = scanner.nextInt();
                     System.out.println("Введите максимальное значение желаемой памяти ЖД Теробайтах");
                     int maxHdd = scanner.nextInt();
-                    for (NoteBook noteBook: noteBooks){
-                        if (noteBook.getHDD() >= minHdd && noteBook.getHDD() <= maxHdd){
+                    for (NoteBook noteBook : noteBooks) {
+                        if (noteBook.getHDD() >= minHdd && noteBook.getHDD() <= maxHdd) {
                             filterBook.add(noteBook);
                         }
                     }
                     noteBooks = Set.copyOf(filterBook);
                     break;
                 case "3":
-                    System.out.println("Фильтр ОС");
                     System.out.println("Выберите Ос:\n1 - Windows\n2 - Linux\n3 - MacOS\n4 - MS-DOS");
                     String os = scanner.nextLine();
                     switch (os) {
                         case "1":
-                            for (NoteBook noteBook: noteBooks){
-                                if (noteBook.getOS().equals("Windows")){
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getOS().equals("Windows")) {
                                     filterBook.add(noteBook);
                                 }
                             }
                             break;
                         case "2":
-                            for (NoteBook noteBook: noteBooks){
-                                if (noteBook.getOS().equals("Linux")){
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getOS().equals("Linux")) {
                                     filterBook.add(noteBook);
                                 }
                             }
                             break;
                         case "3":
-                            for (NoteBook noteBook: noteBooks){
-                                if (noteBook.getOS().equals("MacOS")){
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getOS().equals("MacOS")) {
                                     filterBook.add(noteBook);
                                 }
                             }
                             break;
                         case "4":
-                            for (NoteBook noteBook: noteBooks){
-                                if (noteBook.getOS().equals("MS-DOS")){
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getOS().equals("MS-DOS")) {
                                 }
                             }
                             break;
@@ -81,70 +78,69 @@ public class Main {
                     }
                     noteBooks = Set.copyOf(filterBook);
                     break;
-                        case "4":
-                            System.out.println("Фильтр цвету");
-                            System.out.println("Выберите цвет:\n1 - red\n2 - black\n3 - white\n4 - gray\n5 - green");
-                            String col = scanner.nextLine();
-                            switch (col) {
-                                case "1":
-                                    for (NoteBook noteBook: noteBooks){
-                                        if (noteBook.getColour().equals("red")){
-                                            filterBook.add(noteBook);
-                                        }
-                                    }
-                                    break;
-                                case "2":
-                                    for (NoteBook noteBook: noteBooks){
-                                        if (noteBook.getColour().equals("black")){
-                                            filterBook.add(noteBook);
-                                        }
-                                    }
-                                    break;
-                                case "3":
-                                    for (NoteBook noteBook: noteBooks){
-                                        if (noteBook.getColour().equals("white")){
-                                            filterBook.add(noteBook);
-                                        }
-                                    }
-                                    break;
-                                case "4":
-                                    for (NoteBook noteBook: noteBooks){
-                                        if (noteBook.getColour().equals("gray")){
-                                            filterBook.add(noteBook);
-                                        }
-                                    }
-                                case "5":
-                                    for (NoteBook noteBook: noteBooks){
-                                        if (noteBook.getColour().equals("green")){
-                                            filterBook.add(noteBook);
-                                        }
-                                    }
-                                default:
-                                    System.out.println("Некорректный ввод");
-                                    break;
+                case "4":
+                    System.out.println("Выберите цвет:\n1 - red\n2 - black\n3 - white\n4 - gray\n5 - green");
+                    String col = scanner.nextLine();
+                    switch (col) {
+                        case "1":
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getColour().equals("red")) {
+                                    filterBook.add(noteBook);
+                                }
                             }
-                            noteBooks = Set.copyOf(filterBook);
+                            break;
+                        case "2":
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getColour().equals("black")) {
+                                    filterBook.add(noteBook);
+                                }
+                            }
+                            break;
+                        case "3":
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getColour().equals("white")) {
+                                    filterBook.add(noteBook);
+                                }
+                            }
+                            break;
+                        case "4":
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getColour().equals("gray")) {
+                                    filterBook.add(noteBook);
+                                }
+                            }
                             break;
                         case "5":
-                            System.out.println("Подбор окончен");
-                            if (noteBooks.isEmpty()) {
-                                System.out.println("Нет ноутбуков подходящих по выбранные параметры\nОзнакомьтесь с полным списком имеющихся в наличии ноутбуков");
-                                printSet(allNoteBooks);
+                            for (NoteBook noteBook : noteBooks) {
+                                if (noteBook.getColour().equals("green")) {
+                                    filterBook.add(noteBook);
+                                }
                             }
-                            else {
-                                System.out.println("Подходящие ноутбуки");
-                                printSet(noteBooks);
-                            }
-                            return;
+                            break;
                         default:
                             System.out.println("Некорректный ввод");
                             break;
                     }
+                    noteBooks = Set.copyOf(filterBook);
+                    break;
+                case "5":
+                    System.out.println("Подбор окончен");
+                    if (noteBooks.isEmpty()) {
+                        System.out.println("Нет ноутбуков подходящих по выбранные параметры\nОзнакомьтесь с полным списком имеющихся в наличии ноутбуков");
+                    } else {
+                        System.out.println("Подходящие ноутбуки");
+                        printSet(noteBooks);
+                    }
+                    return;
+                default:
+                    System.out.println("Некорректный ввод");
+                    break;
             }
         }
+    }
 
 
-    static Set<NoteBook> generationRandom(int count){
+    static Set<NoteBook> generationRandom(int count) {
         Set<NoteBook> noteBooks = new HashSet<>();
         Map<Integer, String> typeOS = new HashMap<>();
         typeOS.put(1, "Windows");
@@ -163,14 +159,15 @@ public class Main {
             newNoteBook.setRAM(random.nextInt(1, 33));
             newNoteBook.setHDD(random.nextInt(1, 9));
             newNoteBook.setOS(typeOS.get(random.nextInt(1, 5)));
-            newNoteBook.setColour(colourBook.get(random.nextInt(1,6)));
+            newNoteBook.setColour(colourBook.get(random.nextInt(1, 6)));
             noteBooks.add(newNoteBook);
         }
 
         return noteBooks;
     }
-    static void printSet(Set<NoteBook> noteBooks){
-        for (NoteBook noteBook: noteBooks){
+
+    static void printSet(Set<NoteBook> noteBooks) {
+        for (NoteBook noteBook : noteBooks) {
             System.out.println(noteBook);
         }
     }
