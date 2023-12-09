@@ -1,6 +1,5 @@
 package scr.HomeWork6;
 
-import scr.Seminar6.Task2.Cat;
 
 import java.util.*;
 import java.util.Scanner;
@@ -69,6 +68,7 @@ public class Main {
                         case "4":
                             for (NoteBook noteBook : noteBooks) {
                                 if (noteBook.getOS().equals("MS-DOS")) {
+                                    filterBook.add(noteBook);
                                 }
                             }
                             break;
