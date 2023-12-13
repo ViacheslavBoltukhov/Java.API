@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Set<NoteBook> allNoteBooks = new HashSet<>();
-        allNoteBooks = generationRandom(50);
+        allNoteBooks = generationRandom(10);
         printSet(allNoteBooks);
         Set<NoteBook> noteBooks = Set.copyOf(allNoteBooks);
         while (true) {
