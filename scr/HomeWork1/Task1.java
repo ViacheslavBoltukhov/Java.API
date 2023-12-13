@@ -1,4 +1,4 @@
-package HomeWork1;
+package scr.HomeWork1;
 public class Task1 {
     public static void main(String[] args) {
         int num = 5;
