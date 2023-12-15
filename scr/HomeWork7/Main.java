@@ -51,6 +51,8 @@ public class Main {
                 System.out.println("Area: " + circle.calculateArea(circle.getRadius()));
                 System.out.println("Perimeter :" + circle.calculatePerimeter(circle.getRadius()));
                 break;
+            default:
+                System.out.println("Not shape");
         }
     }
 }
