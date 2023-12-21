@@ -1,11 +1,11 @@
-package Lesson_08.Ex003;
+package scr.Lesson_08.Ex003;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import Lesson_08.Ex003.alliance.*;
-import Lesson_08.Ex003.*;
+import scr.Lesson_08.Ex003.alliance.*;
+import scr.Lesson_08.Ex003.*;
 
 public class Program {
     public static void main(String[] args) {
@@ -69,13 +69,13 @@ public class Program {
 
         // #endregion
 
-        // #region
-        BaseHero dh = new Druid();
-        /*BaseHero*/
-        Dwarf dwarf = new Dwarf();
-        //dwarf.dwarf_method();
-        //((Dwarf)dwarf).dwarf_method();
-        System.out.println(dwarf.name);
-        // #endregion
+//        // #region
+//        BaseHero dh = new Druid();
+//        /*BaseHero*/
+//        Dwarf dwarf = new Dwarf();
+//        //dwarf.dwarf_method();
+//        //((Dwarf)dwarf).dwarf_method();
+//        System.out.println(dwarf.name);
+//        // #endregion
     }
 }

@@ -1,6 +1,6 @@
-package Lesson_08.Ex003.alliance;
+package scr.Lesson_08.Ex003.alliance;
 
-import Lesson_08.Ex003.*;
+import scr.Lesson_08.Ex003.*;
 
 public class Human extends Druid {
     
