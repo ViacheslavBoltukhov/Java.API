@@ -1,0 +1,12 @@
+янв. 23, 2024 11:19:13 AM scr.homeWork13.FileLogger log
+INFO: Значение калькулятора 2.0 + 3.0i. Начало вызова метода minus с параметром 5.0 + 4.0i
+янв. 23, 2024 11:19:13 AM scr.homeWork13.FileLogger log
+INFO: Вызов метода minus произошел.
+янв. 23, 2024 11:19:13 AM scr.homeWork13.FileLogger log
+INFO: Получение результата -3.0 - 1.0i
+янв. 23, 2024 11:19:40 AM scr.homeWork13.FileLogger log
+INFO: Значение калькулятора 2.0 + 5.0i. Начало вызова метода div с параметром 2.0
+янв. 23, 2024 11:19:40 AM scr.homeWork13.FileLogger log
+INFO: Вызов метода div произошел.
+янв. 23, 2024 11:19:40 AM scr.homeWork13.FileLogger log
+INFO: Получение результата 1.0 + 2.5i

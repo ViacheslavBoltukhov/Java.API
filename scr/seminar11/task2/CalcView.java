@@ -9,7 +9,7 @@ public class CalcView {
         scanner = new Scanner(System.in);
     }
     public String getUserChois(){
-        System.out.println("Ваш выбор");
+        System.out.print("Ваш выбор: ");
         return scanner.next();
     }
 
